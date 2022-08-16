@@ -23,12 +23,12 @@ export const WeatherCard = ({weatherData}: WeatherProps) => {
         flexDirection="column"
         w="70%"
         ml="6"
-        mt="4"
+        mt={["2","4"]}
         fontFamily="Roboto"
         >
             <Box 
             color="#025373" 
-            fontSize="20px" 
+            fontSize={["16px","19px" ]}
             fontWeight='bold'
             _dark={{color: "#DCE8F2"}}
             >
@@ -36,8 +36,15 @@ export const WeatherCard = ({weatherData}: WeatherProps) => {
                 <Text>Vento: {weatherData.wind}</Text>
                 <Text>Clima: {weatherData.description}</Text>
             </Box>
-            <Text color="#025373" mt="3" fontWeight='bold'  _dark={{color: "#DCE8F2"}}>Temperatura para os proximos três dias:</Text>
-            <Flex flexDirection="row" mt="5">
+            <Text 
+            color="#025373" 
+            mt={["1","3"]} 
+            fontWeight='bold' 
+            _dark={{color: "#DCE8F2"}}
+            >
+                Temperatura para os proximos três dias:
+            </Text>
+            <Flex flexDirection={["column","column","row", "row"]} mt={["3","5"]}>
             {weatherData.forecast.map((temp) => (
                 <Box 
                 key={temp.day} 
@@ -47,7 +54,7 @@ export const WeatherCard = ({weatherData}: WeatherProps) => {
                 transition="border 0.2s, ease 0s, transform 0.2s"
                 border="2px" 
                 borderColor="#025373"
-                w="30%"
+                w={["100%","60%","70%","40%"]}
                 p="3"
                 justifyContent="center"
                 alignItems="center"

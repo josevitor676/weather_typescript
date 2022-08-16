@@ -14,12 +14,13 @@ export const Header = () => {
         _dark={{bg: "#025373", color: "#DCE8F2", borderColor: "#DCE8F2"}}
         borderBottom="2px"
         borderColor="#025373"
+        p={["2", "2", "0", "0"]}
         >
             <Flex alignItems="center">
                 <Heading 
-                ml="6" 
+                ml={["2","2","6","6"]} 
                 fontFamily="Roboto" 
-                fontSize="4xl"
+                fontSize={["3xl","4xl"]}
                 color="#025373"
                 _dark={{color: "#DCE8F2"}}
                 >
@@ -30,7 +31,7 @@ export const Header = () => {
                 <DarkMode 
                 colorMode={colorMode} 
                 toggleColorMode={toggleColorMode} 
-                mr="8"
+                mr={["2","2","8"]}
                 bg="#025373"
                 color="#DCE8F2"
                 _hover={{bg: "#025373", color: "#DCE8F2"}}

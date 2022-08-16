@@ -9,7 +9,7 @@ export const Home = () => {
         <Flex 
         flexDirection="column" 
         bg="#DCE8F2"   
-        h="100vh"
+        h={["auto","auto","100vh"]}
         _dark={{bg: "#025373"}}
         > 
             <Header/>

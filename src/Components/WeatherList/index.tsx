@@ -18,8 +18,8 @@ export const DashBoard = () => {
                         <>
                             <Text 
                             ml="6"
-                            mt="7" 
-                            fontSize="2xl" 
+                            mt={["5","5","7", "7"]} 
+                            fontSize={["1xl","2xl"]} 
                             fontWeight="bold" 
                             color="#025373" 
                             fontFamily="Roboto" 
